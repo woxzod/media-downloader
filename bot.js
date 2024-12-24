@@ -15,7 +15,7 @@ function downloadVideo(url, chatId) {
     try {
         const outputFile = path.join(__dirname, 'video.mp4');
         // Ensure the URL is wrapped in double quotes
-        const command = `C:\\Users\\blizzard\\Desktop\\media-downloader\\yt-dlp.exe -o "${outputFile}" "${url}"`;
+        const command = `yt-dlp -o "${outputFile}" "${url}"`;
 
         bot.sendMessage(chatId, 'Downloading your video. Please wait...');
 
